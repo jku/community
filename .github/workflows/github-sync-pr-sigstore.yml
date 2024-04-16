@@ -25,7 +25,7 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.sha }}
 
-    - uses: sigstore/github-sync@main
+    - uses: jku/github-sync@upgrade-pulumi-github-v6
       with:
         work_dir: ./github-sync
         config_directory: ./github-sync/github-data
